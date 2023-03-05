@@ -1,0 +1,183 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(130,181,224,255);
+    height: 100%;
+    width: 100%;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(91,118,139,255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(80,95,108,255); 
+  }
+  
+  ::-webkit-scrollbar-horizontal {
+    display: none;
+  }
+  
+  .Margintoper{
+    margin: 40%;
+  }
+
+  .App {
+    background-color: rgba(130,181,224,255);
+  }
+  
+  .App-header {
+    background-color: rgba(130,181,224,255);
+  }
+
+  .Predios{
+    display: flex;
+
+    max-width: 80%;
+  }
+
+  .Predio{
+    color: black;
+  }
+  
+
+  .Container_Predio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Predio_Base{
+    height: auto;
+    width: auto;
+    background-color: aqua;
+  }
+
+  .Telhado{
+    border-bottom: 3vh solid rgba(95,118,157,255);
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    height: 0vh;
+    width: 16vh;
+  }
+
+  .Telhado-Andar{
+    background-color: rgba(95,118,157,255);
+    box-shadow: inset -26px 1px 0px -1px rgba(30,41,65,255);
+    height: 1vh;
+    width: 17vh;
+  }
+
+  .Nomepredio{
+    background-color: rgba(210,214,228,255);
+    box-shadow: inset -16px 1px 0px -1px rgba(99,102,113,255);
+    height: 2vh;
+    width: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: rgba(95,118,157,255);
+  }
+
+  .Terreo {
+    background-color: rgba(210,214,228,255);
+    box-shadow: inset -16px 1px 0px -1px rgba(99,102,113,255);
+    height: 8vh;
+    width: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+.Terreo:hover .Janela{
+  background-color: rgba(242,155,3,255);
+  box-shadow: inset -4px 4px 1px 2px rgba(206,142,56,255);
+  height: 3vh;
+  width: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-top: 1vh;
+}
+
+.Terreo:hover .Porta{
+  background-color: rgba(242,155,3,255);
+  box-shadow: inset -21px 1px 1px -1px rgba(206,142,56,255);
+  height: 3vh;
+  width: 4vh;
+  margin-top: 5vh;
+}
+
+.Porta {
+  background-color: #92aebe;
+  box-shadow: inset -21px 1px 1px -1px #789aa4;
+  height: 3vh;
+  width: 4vh;
+  margin-top: 5vh;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Janela {
+  background-color: #92aebe;
+  box-shadow: inset -4px 4px 1px 2px #789aa4;
+  height: 3vh;
+  width: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-top: 1vh;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Andar {
+  background-color: rgba(210,214,228,255);
+  box-shadow: inset -16px 1px 0px -1px rgba(99,102,113,255);
+  height: 8vh;
+  width: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Andar:hover .Janela{
+  background-color: rgba(242,155,3,255);
+  box-shadow: inset -4px 4px 1px 2px rgba(206,142,56,255);
+  height: 3vh;
+  width: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-top: 1vh;
+}
+
+
+.CaixaDeEdição{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-color: #789aa4;
+  border-style: inset;
+}
+
+.BotãodeChamada{
+  height: 5vh;
+  width: 25vh;
+  background-color: rgba(210,214,228,255);
+  box-shadow: inset -4px 4px 1px 2px rgba(95,118,157,255), inset 4px -4px 1px 2px rgba(95,118,157,255);
+  color: rgba(99,102,113,255);
+}
+
+.Infobox{
+  font-size: 1vh;
+}

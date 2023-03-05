@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://root:root@localhost:5432/database"
+}
+
+model Predio {
+  id           Int           @id @default(autoincrement())
+  nome         String
+  tamanho      Int
+  apartamentos Apartamento[]
+}
+
+
+model Apartamento {
+  id              Int      @id @default(autoincrement())
+  nome            String
+  disponibilidade Boolean  @default(false)
+  locador         String
+  locatario       String
+  valor           Int
+  predioId        Int
+  predio          Predio   @relation(fields: [predioId], references: [id])
+}
+
+model Reserva {
+  id             Int      @id @default(autoincrement())
+  nome           String
+  email          String
+  contato        String
+  mensagem       String
+}

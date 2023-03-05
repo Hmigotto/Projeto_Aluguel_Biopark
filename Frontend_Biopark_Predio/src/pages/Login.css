@@ -1,0 +1,64 @@
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(130,181,224,255);
+    height: 100%;
+    width: 100%;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(91,118,139,255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(80,95,108,255); 
+  }
+  
+  ::-webkit-scrollbar-horizontal {
+    display: none;
+  }
+  
+  .App {
+    text-align: center;
+    background-color: rgba(130,181,224,255);
+  }
+  
+  .App-header {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(130,181,224,255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: auto;
+  }
+  
+  .Calcada {
+    background-color: rgba(113,159,196,255);
+    min-height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Rua {
+    background-color: rgba(64,64,64,255);
+    min-height: 4vh;
+    display: inline-block;
+    width: 100%;
+  }
