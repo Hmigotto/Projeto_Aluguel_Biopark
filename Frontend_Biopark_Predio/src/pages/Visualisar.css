@@ -152,7 +152,7 @@
   justify-content: center;
 }
 
-.Andar:hover .Janela{
+.Andar:hover .Janela {
   background-color: rgba(242,155,3,255);
   box-shadow: inset -4px 4px 1px 2px rgba(206,142,56,255);
   height: 3vh;
@@ -163,14 +163,13 @@
 }
 
 
-.CaixaDeEdição{
+/* .CaixaDeEdição {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   border-color: #789aa4;
   border-style: inset;
-}
+} */
 
 .BotãodeChamada{
   height: 5vh;

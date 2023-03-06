@@ -262,10 +262,13 @@ async function handleRemoveApartamento() {
 
         <div className="Margintoper"></div>
 
-        <div >
+        <div>
           <h2>Bem vindo a tela do ADM !</h2>
           <h3>Você pode acessar /visualisar e /visualisarreserva_adm com os botões abaixo para poder ter a experiencia do cliente ou acessar as reservas dele</h3>
-          <button className="BotãodeChamada" onClick={handleClickVisualisar}>Ir para a tela de Usuario</button>           <button className="BotãodeChamada" onClick={handleClickVisualisarReserva}>Ir para Visualisar Reserva</button>
+          <div className="ContainerBotões">
+            <button className="BotãodeChamada" onClick={handleClickVisualisar}>Ir para a tela de Usuario</button> 
+            <button className="BotãodeChamada" onClick={handleClickVisualisarReserva}>Ir para Visualisar Reserva</button>
+          </div>
           <h3>Aqui você pode modificar ou criar novos apartamentos, assim como ver informações que não estão</h3>
           <h3>normalmente disponiveis para o usuario, como por exemplo o ID, o locador e o locatario</h3>
           <h3>Aqui estão listados todos os predios. Caso o numero de predios aumente muito sera preciso ultilizar a barra de rolamento para a direita</h3>
@@ -294,7 +297,7 @@ async function handleRemoveApartamento() {
         <button className="BotãodeChamada" onClick={handleCreateApartamento}>
   <h3>Criar Apartamento</h3>
 </button>
-<div className="CaixaDeEdição">
+<div className="CaixaDeEdição CaixaGrande">
   <h4>ID do Predio*:</h4>
   <input
     type="text"
@@ -356,7 +359,7 @@ async function handleRemoveApartamento() {
 </div>
 
         <button className="BotãodeChamada" onClick={handleEditApartamento}><h3>Editar Apartamento</h3></button>
-        <div className="CaixaDeEdição">
+        <div className="CaixaDeEdição CaixaGrande">
         <h4>ID do Predio*:</h4>
         <input
     type="text"
