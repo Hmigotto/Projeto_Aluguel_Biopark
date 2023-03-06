@@ -1,26 +1,6 @@
 # Primeiro passo : Baixe o Docker
-----------------------------------------------
-Windows
 Acesse o site oficial do Docker em https://www.docker.com/get-started e clique no botão "Download for Windows".
 Siga as instruções do instalador para concluir a instalação do Docker.
-----------------------------------------------
-Mac
-Acesse o site oficial do Docker em https://www.docker.com/get-started e clique no botão "Download for Mac".
-Siga as instruções do instalador para concluir a instalação do Docker.
-----------------------------------------------
-Linux
-Abra o terminal e execute o seguinte comando para instalar o Docker:
-
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-Após a instalação, execute o seguinte comando para verificar se o Docker está instalado corretamente:
-
-sudo docker run hello-world
-Isso deve baixar e executar uma imagem Docker de teste.
-
-Depois de instalar o Docker, você pode instalar o Docker Compose seguindo as instruções disponíveis no site oficial do Docker. Para mais informações sobre como usar o Docker Compose, consulte a documentação oficial em https://docs.docker.com/compose/.
-----------------------------------------------
-
 
 # Segundo passo : Ative o container Docker
 
