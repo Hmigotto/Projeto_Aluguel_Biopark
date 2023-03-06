@@ -9,7 +9,7 @@ import App from "./App"
 function Rotas() {
     return (
         <Routes>
-            <Route path="/" element={<App/>} />
+            <Route path="/" element={<Visualisar_adm/>} />
             <Route path="/login" element={<Login/>} />
             <Route path="/visualisar_adm" element={<Visualisar_adm/>} />
             <Route path="/visualisar" element={<Visualisar/>} />

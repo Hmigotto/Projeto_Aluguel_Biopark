@@ -41,9 +41,10 @@
   }
 
   .Predios{
-    display: flex;
-
-    max-width: 80%;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      max-width: 80%;
   }
 
   .Predio{

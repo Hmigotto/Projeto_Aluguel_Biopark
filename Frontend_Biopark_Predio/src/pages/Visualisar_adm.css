@@ -41,7 +41,8 @@
 
   .Predios{
     display: flex;
-
+    justify-content: end;
+    align-items: end;
     max-width: 80%;
   }
 

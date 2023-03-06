@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import './Visualisar_adm.css';
+import { useNavigate } from "react-router-dom";
 
 
 const Predios = ({ predios }) => {
@@ -244,6 +245,17 @@ async function handleRemoveApartamento() {
     getPredios();
   }, []);
 
+
+  const navigate = useNavigate();
+
+  function handleClickVisualisar() {
+      navigate("/visualisar");
+    }
+
+    function handleClickVisualisarReserva() {
+      navigate("/visualisarreserva_adm");
+    }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -252,6 +264,8 @@ async function handleRemoveApartamento() {
 
         <div >
           <h2>Bem vindo a tela do ADM !</h2>
+          <h3>Você pode acessar /visualisar e /visualisarreserva_adm com os botões abaixo para poder ter a experiencia do cliente ou acessar as reservas dele</h3>
+          <button className="BotãodeChamada" onClick={handleClickVisualisar}>Ir para a tela de Usuario</button>           <button className="BotãodeChamada" onClick={handleClickVisualisarReserva}>Ir para Visualisar Reserva</button>
           <h3>Aqui você pode modificar ou criar novos apartamentos, assim como ver informações que não estão</h3>
           <h3>normalmente disponiveis para o usuario, como por exemplo o ID, o locador e o locatario</h3>
           <h3>Aqui estão listados todos os predios. Caso o numero de predios aumente muito sera preciso ultilizar a barra de rolamento para a direita</h3>
